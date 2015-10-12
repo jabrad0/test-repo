@@ -1,0 +1,75 @@
+
+
+<html>
+<head>
+  <title>HTML Document</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div id="everything">
+<div id = "h1">
+
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p></div>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+
+      <img src="images/morris.jpg" alt="Morris the cat" style="width:200px;height:200px;">
+  </div>
+  <script>
+  var a = 4;
+  console.log(a)
+
+var userColor = prompt('What color do you want?');
+if (userColor === 'red' ){
+  $('h1').css({'color':'red'});
+  $('body').css({'background-color':'#e07070'});
+  $('#h1 p').css({'color': '#ed4975'});
+  $('.holder').css({'border-style':'dashed', 'border-color': '#c42727'});
+  $('img').attr('src','http://i.imgur.com/nWGCwiE.gif')
+
+} else if (userColor === 'blue' ){
+  $('h1').css({'color':'blue'});
+  $('body').css({'background-color':'#2cb7ea'});
+  $('#h1 p').css({'color': '#18a0ad'});
+}
+else {
+  $('h1').css({'color':'black'});
+  $('body').css({'background-color':'white'});
+  $('#h1 p').css({'color': '#black'});
+}
+
+alert("you picked the " + userColor + " theme!");
+
+
+// $('h1').css('color','blue');
+// $('h1').css({'color':'blue'});
+// $('body').css({'background-color':'green'});
+// $('#everything').css({'font-size':'1.5em'});
+// $('.holder').css({'border-style':'dashed', 'border-color': 'yellow'});
+// $('li').css({'font-weight':'bold'});
+
+// $('#h1 p').css({'color':'green'});
+// $('#secret').css({'display':'block'});
+// $('#change-me').text("This is a new sentence.");
+// $('#change-me').append(" this used append here.");
+// $('#change-me').replaceWith("<p>this used replace</p><p>and so did this....</p>");
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+
+<html>
+<head>
+  <title>HTML Document</title>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div id="everything">
+<div id = "h1">
+
+      <h1>A heading!</h1>
+      <p>Here's some text!</p>
+      <p>Here's a second set of text!</p></div>
+      <div class="holder">
+          <ul>
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+          </ul>
+      </div>
+      <div class="holder">
+          <ol>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+          </ol>
+      </div>
+      <div id="change-me">This part needs to change!</div>
+      <div id="secret">We should hide this!</div>
+
+
+  </div>
+  <script>
+  var new_div = $('<div class="important">Got a new div coming in here!</div>')
+
+  // can we see the new div on the page yet?
+  new_div.css('color','red').attr('id','primary').text("Hi, I'm new here")
+
+  // is it on the page yet?
+  $('body').append(new_div)
+
+  // how about now?
+
+  // // what's this do?
+  // new_div.fadeOut(2000).delay(1000).fadeIn().slideUp(4000)
+
+// var another_div = $('<div class="important">Got a new div coming in here!</div>')
+$('#primary').hide();
+
+
+  </script>
+</body>
+</html>

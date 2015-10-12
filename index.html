@@ -1,0 +1,127 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>JQuery</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+
+<style>
+</style>
+</head>
+
+<body>
+  <div id="container">
+
+
+      <div id="navbar">
+
+          <div class=navbar_item><a href="index.html">Home</a>
+          </div>
+          <div class=navbar_item><a href="about.html">About Us</a>
+          </div>
+          <div class=navbar_item><a href="tutorials.html">Tutorials</a>
+          </div>
+          <div class=navbar_item> <a href="contact.html">Contact</a>
+          </div>
+
+
+      </div>
+      <!-- Center the h1 -->
+      <h1 id="top" align="center">Our Awesome Team</h1>
+      <!-- Size images the same and put in horizontal row Center names beneath and add style,  when hover over change image. -->
+
+      <div class="images_hz">
+          <div class="image">
+              <a href="https://en.wikipedia.org/wiki/Morris_the_Cat" target="_blank">
+                  <img src="images/morris.jpg" alt="Morris the cat" style="width:200px;height:200px;">
+                  <h4 class="img-with-text">Morris</h4>
+              </a>
+          </div>
+
+
+          <div class="image">
+              <a href="https://en.wikipedia.org/wiki/Koko_(dog)" target="_blank">
+                  <img src="images/koko.jpg" alt="Koko the dog" style="width:250px; height:175px;">
+                  <h4>Koko</h4>
+              </a>
+          </div>
+
+          <div class="image">
+              <a href="https://en.wikipedia.org/wiki/Charlotte%27s_Web" target="_blank">
+                  <img src="images/wilbur.jpg" alt="Wilbur the Pig" style="width: 250px;height:200px;">
+                  <h4>Wilbur</h4>
+              </a>
+          </div>
+
+          <div class="image">
+              <a href="https://en.wikipedia.org/wiki/Buttermilk_(horse)" target="_blank">
+                  <img src="images/buttermilk.jpg" alt="Buttermilk the horse" style="width:200px;height:200px">
+                  <h4>Buttermilk</h4>
+          </div>
+          </a>
+      </div>
+
+      <!-- </div> -->
+      <hr />
+      <!-- Make this hr line a bit thicker -->
+      <p>
+          <div>
+              <h2 align="center">Our Qualifications</h2>
+              <ol>
+                  <li>Over <strong>50,000 signaled turns</strong> successfull conducted. </li>
+                  <li><strong>Not a single driving accident or infraction</strong> among any of our professionals.</li>
+                  <li>Over <strong>30 years of driving experience</strong> collectively.</li>
+              </ol>
+          </div>
+      </p>
+      <hr />
+      <div id="notification">
+<div class="alert">
+          <iframe width="200" height="200" src="https://www.youtube.com/embed/z5FV1JZOkjw" frameborder="0" allowfullscreen></iframe>
+          <iframe width="200" height="200" src="https://www.youtube.com/embed/J2Ag7XQbvP4" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+
+      </div>
+
+      <h2>Something Here</h2>
+      <ul>
+          <li>cats</li>
+          <li>dogs</li>
+          <li>piggies</li>
+      </ul>
+      <hr />
+      <p><a href="#top">Return to top</a>
+      </p>
+  </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script>
+$('body').css('background-color', 'pink')
+$('img').attr('src','http://i.imgur.com/nWGCwiE.gif')
+
+$('h1').text('yo yo!')
+$('#notification').html('<div class="alert"><h1>Hold on! </h1></h1><b>an error</b> has occured!</p>')
+$('.container').append("<p>What's the difference between <i>.append()</i> and .html()?</p>")
+
+
+  // $('body').text('hello?')
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
